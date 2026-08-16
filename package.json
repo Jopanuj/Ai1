@@ -1,0 +1,15 @@
+{
+  "name": "bench-console",
+  "version": "1.0.0",
+  "description": "BENCH — a mobile-friendly console that runs your own API keys against a coding + 3D design AI copilot.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  }
+}
