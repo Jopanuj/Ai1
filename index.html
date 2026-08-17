@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+<title>bench :: terminal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="tabs">
+  <div class="tab active" data-tab="chat">chat</div>
+  <div class="tab" data-tab="preview">3d preview</div>
+</div>
+
+<div id="screen" class="tabpanel active">
+  <pre id="banner">
+ ____                  _
+| __ )  ___ _ __   ___| |__
+|  _ \ / _ \ '_ \ / __| '_ \
+| |_) |  __/ | | | (__| | | |
+|____/ \___|_| |_|\___|_| |_|
+
+terminal v2 -- static, no backend, real conversation memory, live 3D preview
+type  help  to see commands
+  </pre>
+
+  <div id="log"></div>
+
+  <div id="inputline">
+    <span id="prompt">you@bench:~$</span>
+    <input id="cmd" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus>
+  </div>
+</div>
+
+<div id="previewPanel" class="tabpanel">
+  <div id="previewBar">
+    <span id="previewLabel">no 3D code loaded yet</span>
+    <button id="previewReload" title="reload scene">↻ reload</button>
+  </div>
+  <iframe id="previewFrame" title="3D preview"></iframe>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
